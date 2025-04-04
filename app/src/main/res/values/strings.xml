@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Vision Assist</string>
+    <string name="tts_ready">Ready to assist</string>
+    <string name="accessibility_service_description">Voice feedback for detected objects</string>
+</resources>
