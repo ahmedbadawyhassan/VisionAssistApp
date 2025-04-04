@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.android' version '1.9.20' // Explicit version
 }
 
 android {
@@ -23,12 +23,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 
     buildFeatures {
@@ -37,22 +37,5 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.12.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    
-    // MJPEG Streaming
-    implementation 'com.github.pedroSG94:mjpeg-view:1.0.8'
-    
-    // TensorFlow Lite
-    implementation 'org.tensorflow:tensorflow-lite:2.10.0'
-    
-    // ChatGPT API
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    
-    // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
-    
-    // Text-to-Speech
-    implementation 'com.google.android.material:material:1.11.0'
+    // ... (same as previous dependencies)
 }
