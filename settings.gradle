@@ -1,4 +1,4 @@
-// settings.gradle (root project)
+// settings.gradle
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 
-// Include the app module
+rootProject.name = "VisionAssistApp"
 include ':app'
